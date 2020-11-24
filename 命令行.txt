@@ -1,0 +1,15 @@
+consoul启动
+consul.exe agent -dev
+网址：http://localhost:8500/
+
+服务
+dotnet  CSWFWUserServiice.dll --urls="http://*:5100" --ip="127.0.0.1" --port=5100
+dotnet  CSWFWUserServiice.dll --urls="http://*:5101" --ip="127.0.0.1" --port=5101
+dotnet  CSWFWUserServiice.dll --urls="http://*:5102" --ip="127.0.0.1" --port=5102
+
+http://127.0.0.1:5100/weatherforecast
+
+ocelot
+dotnet  CSWFWOcelot.dll --urls="http://127.0.0.1:5115" --ip="127.0.0.1" --port=5115
+
+
